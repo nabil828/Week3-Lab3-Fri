@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+      background-color: aquamarine;
+      margin-top: 10px;
+    }
+
+    #right-column .card {
+      background-color: tomato;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column
+    }
+
+    @media (min-width:500px) {
+      main {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="left-column">
+      <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nesciunt, beatae omnis quam
+        ab dolore placeat veritatis in maiores animi.</div>
+      <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo incidunt quasi inventore optio
+        tenetur debitis labore repudiandae vero corrupti magni.</div>
+    </div>
+    <div id="right-column">
+      <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae non molestias deserunt cumque
+        ullam obcaecati et vitae quae illum amet.</div>
+    </div>
+  </main>
+
+</body>
+
+</html>
